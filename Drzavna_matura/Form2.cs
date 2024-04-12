@@ -28,5 +28,10 @@ namespace Drzavna_matura
         {
             Hide();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,31 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Unesi_ucenika = new System.Windows.Forms.Button();
-            this.Pregledaj_ucenike = new System.Windows.Forms.Button();
             this.Unesi_skolu = new System.Windows.Forms.Button();
+            this.Pregledaj_ucenike = new System.Windows.Forms.Button();
+            this.Unesi_ucenika = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // Unesi_skolu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Државна матура";
-            // 
-            // Unesi_ucenika
-            // 
-            this.Unesi_ucenika.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Unesi_ucenika.Location = new System.Drawing.Point(387, 284);
-            this.Unesi_ucenika.Name = "Unesi_ucenika";
-            this.Unesi_ucenika.Size = new System.Drawing.Size(177, 107);
-            this.Unesi_ucenika.TabIndex = 1;
-            this.Unesi_ucenika.Text = "Унеси ученика";
-            this.Unesi_ucenika.UseVisualStyleBackColor = true;
+            this.Unesi_skolu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unesi_skolu.Location = new System.Drawing.Point(157, 284);
+            this.Unesi_skolu.Name = "Unesi_skolu";
+            this.Unesi_skolu.Size = new System.Drawing.Size(177, 107);
+            this.Unesi_skolu.TabIndex = 3;
+            this.Unesi_skolu.Text = "Унеси шаблон/школу";
+            this.Unesi_skolu.UseVisualStyleBackColor = true;
+            this.Unesi_skolu.Click += new System.EventHandler(this.Unesi_skolu_Click);
             // 
             // Pregledaj_ucenike
             // 
@@ -64,16 +55,25 @@
             this.Pregledaj_ucenike.Text = "Прегледај ученике";
             this.Pregledaj_ucenike.UseVisualStyleBackColor = true;
             // 
-            // Unesi_skolu
+            // Unesi_ucenika
             // 
-            this.Unesi_skolu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Unesi_skolu.Location = new System.Drawing.Point(157, 284);
-            this.Unesi_skolu.Name = "Unesi_skolu";
-            this.Unesi_skolu.Size = new System.Drawing.Size(177, 107);
-            this.Unesi_skolu.TabIndex = 3;
-            this.Unesi_skolu.Text = "Унеси школу";
-            this.Unesi_skolu.UseVisualStyleBackColor = true;
-            this.Unesi_skolu.Click += new System.EventHandler(this.Unesi_skolu_Click);
+            this.Unesi_ucenika.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unesi_ucenika.Location = new System.Drawing.Point(387, 284);
+            this.Unesi_ucenika.Name = "Unesi_ucenika";
+            this.Unesi_ucenika.Size = new System.Drawing.Size(177, 107);
+            this.Unesi_ucenika.TabIndex = 1;
+            this.Unesi_ucenika.Text = "Унеси ученика";
+            this.Unesi_ucenika.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(271, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(416, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Државна матура";
             // 
             // Form1
             // 
@@ -94,10 +94,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Unesi_ucenika;
-        private System.Windows.Forms.Button Pregledaj_ucenike;
         private System.Windows.Forms.Button Unesi_skolu;
+        private System.Windows.Forms.Button Pregledaj_ucenike;
+        private System.Windows.Forms.Button Unesi_ucenika;
+        private System.Windows.Forms.Label label1;
     }
 }
 
