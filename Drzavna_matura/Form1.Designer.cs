@@ -54,6 +54,7 @@
             this.Pregledaj_ucenike.TabIndex = 2;
             this.Pregledaj_ucenike.Text = "Прегледај ученике";
             this.Pregledaj_ucenike.UseVisualStyleBackColor = true;
+            this.Pregledaj_ucenike.Click += new System.EventHandler(this.Pregledaj_ucenike_Click);
             // 
             // Unesi_ucenika
             // 
@@ -64,6 +65,7 @@
             this.Unesi_ucenika.TabIndex = 1;
             this.Unesi_ucenika.Text = "Унеси ученика";
             this.Unesi_ucenika.UseVisualStyleBackColor = true;
+            this.Unesi_ucenika.Click += new System.EventHandler(this.Unesi_ucenika_Click);
             // 
             // label1
             // 

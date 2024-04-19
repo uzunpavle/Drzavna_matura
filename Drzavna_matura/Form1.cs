@@ -23,5 +23,17 @@ namespace Drzavna_matura
             Form2 Unesi_skolu = new Form2();
             Unesi_skolu.ShowDialog();
         }
+
+        private void Unesi_ucenika_Click(object sender, EventArgs e)
+        {
+            Form3 Unesi_ucenika = new Form3();
+            Unesi_ucenika.ShowDialog();
+        }
+
+        private void Pregledaj_ucenike_Click(object sender, EventArgs e)
+        {
+            Form4 Pregledaj_ucenike = new Form4();
+            Pregledaj_ucenike.ShowDialog();
+        }
     }
 }
