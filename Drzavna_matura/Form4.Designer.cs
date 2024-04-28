@@ -48,6 +48,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -137,6 +138,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(253, 282);
             this.comboBox4.Name = "comboBox4";
@@ -145,6 +147,7 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(253, 231);
             this.comboBox3.Name = "comboBox3";
@@ -153,6 +156,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(253, 176);
             this.comboBox5.Name = "comboBox5";
@@ -161,11 +165,13 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(253, 113);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(219, 21);
             this.comboBox2.TabIndex = 24;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -185,6 +191,7 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "<<";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -195,6 +202,7 @@
             this.button2.TabIndex = 32;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
@@ -205,6 +213,7 @@
             this.button4.TabIndex = 33;
             this.button4.Text = ">";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -215,15 +224,27 @@
             this.button5.TabIndex = 34;
             this.button5.Text = ">>";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(339, 343);
+            this.button3.Location = new System.Drawing.Point(339, 320);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 57);
             this.button3.TabIndex = 35;
             this.button3.Text = "Обриши ученика";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(339, 383);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(133, 57);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "Измени ученика";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form4
             // 
@@ -231,6 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(515, 450);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -281,5 +303,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button6;
     }
 }

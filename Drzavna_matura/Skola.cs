@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Drzavna_matura
 {
-    internal class Skola
+    public class Skola
     {
         public string ime;
         public string matura;
